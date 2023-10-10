@@ -1,1 +1,177 @@
 /* https://www.youtube.com/watch?v=G8rUCF3BY6s' */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+main{
+  height: 100vh;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  padding: 40px;
+}
+.logo h1 {
+  font-size: 1.7rem;
+  font-weight:600 ;
+  color: #1e1c2a;
+}
+.logo h1 span{
+  color: #d63a25;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+ul{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+ul li a{
+  font-size: 1.10rem;
+  color:  #1e1c2a;
+  font-weight: 500;
+  margin: 40px;
+}
+nav i {
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+.amburgue{
+  display: none;
+  margin-right: 4rem;
+}
+.amburgue span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #1e1c2a; 
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+section{
+  width: 80%;
+  margin: 0 auto;
+}
+.descrition{
+ max-width: 60%;
+}
+.descrition h4{
+  color: #d63a25;
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+ 
+}
+.descrition h2{
+  font-size: 4rem;
+  line-height: 1;
+  color: #1e1c2a;
+  margin-bottom: 1rem;
+}
+
+button{
+  background-color: #d63a25;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 3rem;
+  padding:15px 45px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+.img{
+  min-width: 40%;
+  display: flex;
+  align-items: center;
+}
+img{
+  width: 100%;
+}
+@media(max-width: 768px){
+  
+  .amburgue{
+    display: block;
+  }
+  nav{
+     display: none;
+  }
+  .logo h1 {
+    font-size: 1.7rem;
+   
+  }
+  header{
+    width: 100%;
+    padding: 30px 30px ;
+  }
+ 
+  section{
+    flex-direction: column;
+    justify-content:initial ;
+    width: 100%;
+    
+  }
+   .descrition {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .descrition h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+   }
+   .descrition h2 {
+    line-height: 1.2;
+    width: 80%;
+    text-align: center;
+    font-size: 2.6rem;
+   }
+   .descrition p {
+    max-width: 80%;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+   }
+   button{
+    padding:15px 45px;
+    font-size: 1rem;
+    border-radius: 8px;
+   }
+   .img{
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  img{
+    width: 110%;
+  }
+  
+}
+@media(min-width: 1300px){
+  .descrition h2{
+    max-width: 80%;
+  }
+  .descrition p {
+    max-width: 60%;
+  }
+  .img {
+    width: 70%;
+  }
+  section{
+    margin: 1rem auto;
+  }
+  
+}
+
+
+ 
